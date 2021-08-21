@@ -2,16 +2,17 @@
     "name": "__MSG_lnext_name__",
     "description": "__MSG_lnext_description__",
     "author": "Lcandy",
-    "version": "0.0.1",
+    "version": "0.1",
     "default_locale": "zh_CN",
     "manifest_version": 3,
-    "content_scripts": [{
-        "matches": ["https://*/", "http://*/"],
-        "js": ["opensearch.js"],
-        "run_at": "document_start"
-    }],
+    "background": {
+        "service_worker": "background.js"
+    },
     "action": {
         "default_title": "oSearch",
         "default_popup": "pages/popup.html"
-    }
+    },
+    "permissions": ["storage", "scripting", "activeTab", "tabs"],
+    "host_permissions": ["https://*/", "http://*/"]
+
 }

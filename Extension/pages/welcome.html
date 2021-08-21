@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oSearch</title>
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <style>
+        body {
+            text-align: center;
+            --google-blue-600: rgb(26, 115, 232);
+            --google-grey-900: rgb(32, 33, 36);
+            --google-grey-refresh-300: rgb(218, 220, 224);
+        }
+        
+        .opinion button {
+            -webkit-appearance: none;
+            border-radius: 8px;
+            box-sizing: border-box;
+            display: inline-flex;
+            font-family: inherit;
+            height: 7.5rem;
+            justify-content: center;
+            outline: 0;
+            position: relative;
+            transition-duration: 500ms;
+            transition-property: box-shadow;
+            vertical-align: bottom;
+            width: 14.5rem;
+            background: white;
+            border: 1px solid var(--google-grey-refresh-300);
+            color: var(--google-grey-900);
+            cursor: pointer;
+            flex-direction: column;
+            margin-inline-start: 0.75rem;
+            margin-inline-end: 0.75rem;
+            margin-top: 0.75rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        #default {
+            border: 1px solid var(--google-blue-600);
+            color: var(--google-blue-600);
+            font-weight: 500;
+        }
+        
+        #opinion div {
+            margin: 10px;
+        }
+        
+        #opinion h1,
+        #opinion p {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            width: fit-content;
+        }
+        
+        .welcome h1,
+        .welcome h2 {
+            margin: 0px;
+        }
+        
+        .welcome h1 {
+            font-size: 1.8em;
+            font-weight: 500;
+            margin-bottom: 36px;
+        }
+        
+        .welcome h2 {
+            font-size: 1.5em;
+            font-weight: 325;
+        }
+        
+        .terms {
+            font-size: 12px;
+            font-weight: 300;
+            margin: 20px
+        }
+        
+        .osearch-logo {
+            background-image: url(add_bookmarks.svg);
+            background-position: center bottom;
+            background-size: 170px 170px;
+            height: 146px;
+            margin: auto;
+            margin-bottom: 32px;
+            width: 170px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="welcome">
+        <div class="osearch-logo"></div>
+        <h2>Welcome to oSearch</h2>
+        <h1>Select a way extension works.</h1>
+        <div id="opinion" class="opinion">
+            <button id="default">
+                <div>
+                    <h1 id="defaultTitle">Default</h1>
+                    <p id="defaultDescription">Use oSearch default settings.</p>
+                </div>
+            </button>
+            <button id="custome">
+                <div>
+                    <h1 id="defaultTitle">Custome</h1>
+                    <p id="defaultDescription">defaultDescription</p>
+                </div>
+            </button>
+        </div>
+        <p class="terms">You will connect to oSearch to update the basic data. For more imformations, here is the <a href="#">Terms</a></p>
+    </div>
+
+
+
+</body>
+
+</html>
