@@ -4,14 +4,14 @@ chrome.runtime.onInstalled.addListener(() => {
 
     });
     /*chrome.tabs.create({
-        url: 'pages/initialization.html'
+        url: 'pages/welcome.html'
     });*/
 });
 
 chrome.runtime.onStartup.addListener(() => {
     //check update
 });
-
+/*
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
     if (changeInfo.status === 'loading') {
         chrome.scripting.executeScript({
@@ -35,4 +35,4 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
     }
 
 
-});
+});*/
