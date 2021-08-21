@@ -2,6 +2,8 @@
     "version": "0.1",
     "date": "null",
     "customeUrl": "",
+    "updateLog": "updateLog shows here",
+    "updateHistory": "updateHistory shows here",
     "opensearch": {
         "bilibili": {
             "enabled": false,
