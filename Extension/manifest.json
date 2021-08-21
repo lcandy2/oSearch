@@ -2,7 +2,7 @@
     "name": "__MSG_lnext_name__",
     "description": "__MSG_lnext_description__",
     "author": "Lcandy",
-    "version": "0.0.1",
+    "version": "0.1",
     "default_locale": "zh_CN",
     "manifest_version": 3,
     "content_scripts": [{
