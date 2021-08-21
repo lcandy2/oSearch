@@ -1,0 +1,42 @@
+{
+    "version": "0.1",
+    "date": "2021-8-21",
+    "url": "",
+    "opensearch": {
+        "bilibili": {
+            "enabled": false,
+            "domain": "bilibili.com",
+            "title": "哔哩哔哩",
+            "href": "",
+            "_comments ": "https://github.com/lcandy2/oSearch/opensearch/bilibili.com/README.md"
+        },
+        "douban": {
+            "enabled": true,
+            "domain": "douban.com",
+            "title": "豆瓣",
+            "href": "//www.douban.com/opensearch",
+            "_comments": "https://github.com/lcandy2/oSearch/opensearch/douban.com/README.md"
+        },
+        "zhihu.com": {
+            "enabled": true,
+            "domain": "zhihu.com",
+            "title": "知乎",
+            "href": "//static.zhihu.com/static/search.xml",
+            "_comments": "https://github.com/lcandy2/oSearch/opensearch/zhihu.com/README.md"
+        },
+        "weibo.com": {
+            "enabled": false,
+            "domain": "weibo.com",
+            "title": "微博",
+            "href": "//weibo.com/aj/static/opensearch.xml",
+            "_comments": "https://github.com/lcandy2/oSearch/opensearch/weibo.com/README.md"
+        },
+        "taobao.com": {
+            "enabled": true,
+            "domain": "taobao.com",
+            "title": "淘宝购物",
+            "href": "",
+            "_comments": "https://github.com/lcandy2/oSearch/opensearch/taobao.com/README.md"
+        }
+    }
+}
