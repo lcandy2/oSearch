@@ -1,4 +1,7 @@
 # zhihu.com
+```html
+<link rel="search" type="application/opensearchdescription+xml" href="http://static.zhihu.com/static/search.xml" title="知乎">
+```
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
