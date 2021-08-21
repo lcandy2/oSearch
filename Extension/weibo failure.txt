@@ -1,0 +1,35 @@
+GET https://weibo.com/aj/static/opensearch.xml HTTP/1.1
+Host: weibo.com
+Connection: keep-alive
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4616.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,zh-TW;q=0.8,en-US;q=0.7,en;q=0.6
+
+HTTP/1.1 200 OK
+Server: wServer
+Date: Sat, 21 Aug 2021 15:10:47 GMT
+Content-Type: text/xml; charset=utf-8
+Content-Length: 448
+Connection: keep-alive
+Last-Modified: Fri, 06 Aug 2021 06:48:36 GMT
+ETag: "610cdb44-1c0"
+Expires: Sat, 21 Aug 2021 15:12:47 GMT
+Cache-Control: max-age=120
+DPOOL_HEADER: mapi-weibocom-page-1-76b767dd4-5tkl4
+Accept-Ranges: bytes
+SSL_NODE: ssl-010.mweibo.dbl.intra.weibo.cn
+LB: 39.156.6.57
+
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+    <InputEncoding>UTF-8</InputEncoding>
+    <ShortName>微博</ShortName>
+    <Description>微博搜索</Description>
+    <Image height="16" width="16" type="image/x-icon">
+        http://weibo.com/favicon.ico
+    </Image>
+<Url type="text/html" template=" http://s.weibo.com/weibo/{searchTerms}?frm=opensearch "/>
+</OpenSearchDescription>
