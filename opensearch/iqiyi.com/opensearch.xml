@@ -2,5 +2,5 @@
   <ShortName>爱奇艺</ShortName>
   <Description>全网视频搜索引擎</Description>
   <InputEncoding>UTF-8</InputEncoding>
-<Url type="text/html" template=" http://s.weibo.com/weibo/{searchTerms}?frm=opensearch "/>
+<Url type="text/html" template="https://so.iqiyi.com/so/q{searchTerms}"/>
 </OpenSearchDescription>
