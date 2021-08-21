@@ -1,16 +1,16 @@
 {
     "version": "0.1",
     "date": "null",
-    "customeUrl": "",
-    "updateLog": "updateLog shows here",
-    "updateHistory": "updateHistory shows here",
+    "customeUrl": "", // 自定义 OpenSearch xml 文件时所采用的cdn
+    "updateLog": "", // 更新日志
+    "updateHistoryUrl": "",// 查看更新历史的网址
     "opensearch": {
         "bilibili": {
-            "enabled": false,
-            "domain": "bilibili.com",
-            "title": "哔哩哔哩",
-            "customed": true,
-            "href": "",
+            "enabled": false, // 默认情况下启用
+            "domain": "bilibili.com", // 所匹配的域名
+            "title": "哔哩哔哩", // rel 中 title 项内容
+            "customed": true, // 采用自定义 OpenSearch xml
+            "href": "", // rel 中 href 项内容，采用自定义 OpenSearch 时填写相对路径，采用官网链接时填写绝对路径
             "_comments ": "https://github.com/lcandy2/oSearch/opensearch/bilibili.com/README.md"
         },
         "douban": {
