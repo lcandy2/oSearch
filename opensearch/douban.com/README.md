@@ -11,4 +11,4 @@
   <moz:SearchForm>http://www.douban.com/search</moz:SearchForm>
 </OpenSearchDescription>
 ```
-https://www.douban.com/opensearch
+<https://www.douban.com/opensearch>
