@@ -1,7 +1,6 @@
-<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
-                      xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
   <ShortName>爱奇艺</ShortName>
   <Description>全网视频搜索引擎</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Url type="text/html" method="get" template="https://so.iqiyi.com/so/q_{searchTerms}"/>
+<Url type="text/html" template=" http://s.weibo.com/weibo/{searchTerms}?frm=opensearch "/>
 </OpenSearchDescription>
