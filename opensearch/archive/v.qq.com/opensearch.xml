@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+    <ShortName>腾讯视频</ShortName>
+    <Description>搜索 腾讯视频 中的视频</Description>
+    <Url type="text/html" method="get" template="http://v.qq.com/x/search">
+    	<Param name="opensearch" value="1"/>
+    	<Param name="q" value="{searchTerms}"/>	
+    </Url>
+    <Image width="16" height="16">http://v.qq.com/favicon.ico</Image>
+    <InputEncoding>UTF-8</InputEncoding>
+    <moz:SearchForm>http://v.qq.com/x/search</moz:SearchForm>
+</OpenSearchDescription> 
+
