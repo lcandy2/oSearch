@@ -1,10 +1,11 @@
-<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                      xmlns:moz="http://www.mozilla.org/2006/browser/search/">
   <InputEncoding>UTF-8</InputEncoding>
   <ShortName>百度翻译</ShortName>
   <Description>200种语言互译、沟通全世界！</Description>
-  <InputEncoding>UTF-8</InputEncoding>
     <Image height="32" width="32" type="image/x-icon">
         https://fanyi-cdn.cdn.bcebos.com/static/translation/img/favicon/favicon_d87cd2a.ico
     </Image>
-  <Url type="text/html" template="https://fanyi.baidu.com/#auto//{searchTerms}"/>
+  <Url type="text/html" method="get" template="https://fanyi.baidu.com/#auto//{searchTerms}"/>
+  <moz:SearchForm>https://fanyi.baidu.com/</moz:SearchForm>
 </OpenSearchDescription>

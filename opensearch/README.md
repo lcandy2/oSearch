@@ -1,1 +1,1 @@
-# Custom OpenSearch
+# OpenSearch Library
