@@ -1,7 +1,7 @@
 {
     "version": "0.1",
     "date": "null",
-    "xmlUrl": "https://o-search-rust.vercel.app/opensearch/",
+    "xmlUrl": "https://osearch.vercel.app/opensearch/",
     "updateLog": "",
     "updateHistory": {},
     "opensearch": {
