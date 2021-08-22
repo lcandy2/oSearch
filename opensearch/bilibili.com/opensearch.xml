@@ -1,0 +1,9 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                      xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>哔哩哔哩</ShortName>
+  <Description>哔哩哔哩 站内搜索-可以使用av号直接跳转</Description>
+  <Image height="16" width="16" type="image/x-icon">https://www.bilibili.com/favicon.ico</Image>
+  <Url type="text/html" method="get" template="https://www.bilibili.com/search?keyword={searchTerms}" />
+  <moz:SearchForm>https://www.bilibili.com/search</moz:SearchForm>
+  <InputEncoding>UTF-8</InputEncoding>
+</OpenSearchDescription>
