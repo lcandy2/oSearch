@@ -1,0 +1,13 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                      xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>中国裁判文书网</ShortName>
+  <Description>在 中国裁判文书网 上搜索文书</Description>
+    <Image height="16" width="16" type="image/x-icon">
+      https://wenshu.court.gov.cn/website/wenshu/images/favicon.ico
+    </Image>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Url type="text/html" method="get" template="https://wenshu.court.gov.cn/website/wenshu/181217BMTKHNT2W0/index.html"/>
+    <Param name="s21" value="{searchTerms}"/>	
+  </Url>
+  <moz:SearchForm>https://wenshu.court.gov.cn</moz:SearchForm>
+</OpenSearchDescription>

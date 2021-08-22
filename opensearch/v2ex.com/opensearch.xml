@@ -1,0 +1,13 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                      xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <InputEncoding>UTF-8</InputEncoding>
+  <ShortName>V2EX</ShortName>
+  <Description>在 Google 上搜索 V2EX</Description>
+    <Image height="32" width="32" type="image/x-icon">
+      https://v2ex.com/favicon.ico
+    </Image>
+  <Url type="text/html" method="get" template="https://www.google.com/search">
+    <Param name="q" value="site:v2ex.com/t%20{searchTerms}"/>	
+  </Url>
+  <moz:SearchForm>https://v2ex.com</moz:SearchForm>
+</OpenSearchDescription>

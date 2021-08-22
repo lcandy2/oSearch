@@ -4,7 +4,7 @@
   <ShortName>百度翻译</ShortName>
   <Description>获取由 百度翻译 提供的译文。</Description>
     <Image height="32" width="32" type="image/x-icon">
-        https://fanyi-cdn.cdn.bcebos.com/static/translation/img/favicon/favicon_d87cd2a.ico
+        https://fanyi.baidu.com/favicon.ico
     </Image>
   <Url type="text/html" method="get" template="https://fanyi.baidu.com/#auto//{searchTerms}"/>
   <moz:SearchForm>https://fanyi.baidu.com/</moz:SearchForm>

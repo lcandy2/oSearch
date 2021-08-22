@@ -76,30 +76,74 @@
             "enabled": false,
             "type": 2,
             "title": "微博",
-            "customed": false,
             "href": "//weibo.com/aj/static/opensearch.xml",
             "_comments": ""
         },
         "taobao.com": {
-            "enabled": false,
+            "enabled": true,
             "type": 1,
             "title": "淘宝购物",
-            "customed": true,
             "_comments": ""
         },
         "ximalaya.com": {
-            "enabled": false,
+            "enabled": true,
             "type": 1,
             "title": "喜马拉雅",
-            "customed": true,
             "_comments": ""
         },
         "youku.com": {
-            "enabled": false,
+            "enabled": true,
             "type": 1,
             "title": "优酷视频搜索",
-            "customed": true,
             "_comments": ""
+        },
+        "v2ex.com": {
+            "enabled": true,
+            "type": 1,
+            "title": "V2EX",
+            "_comments": ""
+        },
+        "youdao.com": {
+            "enabled": true,
+            "type": 1,
+            "title": "有道词典",
+            "_comments": ""
+        },
+        "mgtv.com": {
+            "enabled": true,
+            "type": 1,
+            "title": "芒果TV",
+            "_comments": ""
+        },
+        "sspai.com": {
+            "enabled": true,
+            "type": 1,
+            "title": "少数派",
+            "_comments": ""
+        },
+        "wenshu.court.gov.cn": {
+            "enabled": true,
+            "type": 1,
+            "title": "中国裁判文书网",
+            "_comments": "可能需要长期维护"
+        },
+        "gushiwen.cn": {
+            "enabled": true,
+            "type": 1,
+            "title": "古诗文网",
+            "_comments": ""
+        },
+        "xueshu.baidu.com": {
+            "enabled": true,
+            "type": 1,
+            "title": "百度学术",
+            "_comments ": ""
+        },
+        "tmall.com": {
+            "enabled": true,
+            "type": 2,
+            "title": "天猫Tmall.com",
+            "_comments ": ""
         }
     }
 }

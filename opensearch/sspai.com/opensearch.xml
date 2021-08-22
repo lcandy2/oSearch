@@ -1,0 +1,11 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                      xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>少数派</ShortName>
+  <Description>在 少数派 上搜索</Description>
+    <Image height="16" width="16" type="image/x-icon">
+      https://cdn.sspai.com/sspai/assets/img/favicon/icon.ico
+    </Image>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Url type="text/html" method="get" template="https://sspai.com/search/post/{searchTerms}"/>
+  <moz:SearchForm>https://sspai.com</moz:SearchForm>
+</OpenSearchDescription>

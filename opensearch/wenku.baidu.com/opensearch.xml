@@ -3,7 +3,9 @@
   <InputEncoding>UTF-8</InputEncoding>
   <ShortName>百度文库</ShortName>
   <Description>在 百度文库 上搜索</Description>
-  <InputEncoding>UTF-8</InputEncoding>
+    <Image height="32" width="32" type="image/x-icon">
+      https://wenku.baidu.com/favicon.ico
+    </Image>
   <Url type="text/html" method="get" template="https://wenku.baidu.com/search">
     <Param name="word" value="{searchTerms}"/>	
     <Param name="ie" value="utf-8"/>

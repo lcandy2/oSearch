@@ -3,7 +3,13 @@
   <InputEncoding>UTF-8</InputEncoding>
   <ShortName>百度地图</ShortName>
   <Description>在 百度地图 上搜索</Description>
-  <Url type="text/html" method="get" template="https://map.baidu.com/search/@?querytype=s&amp;wd={searchTerms}"/>
+    <Image height="32" width="32" type="image/x-icon">
+      https://map.baidu.com/favicon.ico
+    </Image>
+  <Url type="text/html" method="get" template="https://map.baidu.com/search/@">
+    <Param name="querytype" value="s"/>	
+    <Param name="wd" value="{searchTerms}"/>
+  </Url>
   <moz:SearchForm>https://map.baidu.com/search</moz:SearchForm>
 </OpenSearchDescription>
 

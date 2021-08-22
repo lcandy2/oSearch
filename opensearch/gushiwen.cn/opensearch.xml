@@ -1,0 +1,13 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                      xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>古诗文网</ShortName>
+  <Description>在 古诗文网 上搜索古诗文</Description>
+    <Image height="16" width="16" type="image/x-icon">
+      https://www.gushiwen.cn/favicon.ico
+    </Image>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Url type="text/html" method="get" template="https://so.gushiwen.cn/search.aspx"/>
+    <Param name="value" value="{searchTerms}"/>	
+  </Url>
+  <moz:SearchForm>https://so.gushiwen.cn</moz:SearchForm>
+</OpenSearchDescription>

@@ -1,0 +1,14 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                      xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <InputEncoding>UTF-8</InputEncoding>
+  <ShortName>百度学术</ShortName>
+  <Description>在 百度学术 上搜索</Description>
+    <Image height="64" width="64" type="image/x-icon">
+      https://xueshu.baidu.com/favicon.ico
+    </Image>
+  <Url type="text/html" method="get" template="https://xueshu.baidu.com/s">
+    <Param name="wd" value="{searchTerms}"/>	
+    <Param name="ie" value="utf-8"/>
+  </Url>
+  <moz:SearchForm>https://xueshu.baidu.com/</moz:SearchForm>
+</OpenSearchDescription>

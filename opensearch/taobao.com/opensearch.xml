@@ -4,6 +4,9 @@
 	<ShortName>淘宝搜索</ShortName>
 	<Description>淘宝搜索</Description>
 	<InputEncoding>UTF-8</InputEncoding>
+	<Image height="64" width="64" type="image/x-icon">
+      https://www.taobao.com/favicon.ico
+    </Image>
 	<Url type="text/html" method="get" template="http://s.taobao.com/search">
 		<Param name="q" value="{searchTerms}"/>
 		<Param name="ie" value="utf8"/>
