@@ -1,49 +1,72 @@
 {
     "version": "0.1",
     "date": "null",
-    "customeUrl": "",
+    "xmlUrl": "https://o-search-pewfx9q14-lcandy.vercel.app/opensearch/",
     "updateLog": "",
-    "updateHistoryUrl": "",
+    "updateHistory": {},
     "opensearch": {
+        "declear": {
+            "type = 1": "Adding missing OpenSearch using repo xml",
+            "type = 2": "Using repo xml to fix OpenSearch not works properly",
+            "type = 3": "Adding missing OpenSearch using origin xml, [href] is needed!",
+            "type = 4": "Adding missing OpenSearch using CUSTOM xml, [href] is needed!",
+            "type = 5": "Using CUSTOM xml to fix OpenSearch not works properly, [href] is needed!"
+        },
         "bilibili.com": {
-            "enabled": false, 
-            "domain": "bilibili.com",
+            "enabled": false,
+            "type": 1,
             "title": "哔哩哔哩",
-            "customed": true,
-            "href": "", 
-            "_comments ": "https://github.com/lcandy2/oSearch/opensearch/bilibili.com/README.md"
+            "_comments ": ""
+        },
+        "fanyi.baidu.com": {
+            "enabled": false,
+            "type": 1,
+            "title": "百度翻译",
+            "_comments ": ""
+        },
+        "map.baidu.com": {
+            "enabled": false,
+            "type": 1,
+            "title": "百度地图",
+            "_comments ": ""
+        },
+        "wenku.baidu.com": {
+            "enabled": false,
+            "type": 1,
+            "title": "百度文库",
+            "_comments ": ""
+        },
+        "iqiyi.com": {
+            "enabled": false,
+            "type": 1,
+            "title": "爱奇艺",
+            "_comments ": ""
         },
         "douban.com": {
             "enabled": true,
-            "domain": "douban.com",
+            "type": 3,
             "title": "豆瓣",
-            "customed": false,
             "href": "//www.douban.com/opensearch",
-            "_comments": "https://github.com/lcandy2/oSearch/opensearch/douban.com/README.md"
+            "_comments": ""
         },
         "zhihu.com": {
             "enabled": true,
-            "domain": "zhihu.com",
+            "type": 2,
             "title": "知乎",
-            "customed": false,
-            "href": "//static.zhihu.com/static/search.xml",
-            "_comments": "https://github.com/lcandy2/oSearch/opensearch/zhihu.com/README.md"
+            "_comments": "可能需要登录后才能生效"
         },
         "weibo.com": {
             "enabled": false,
-            "domain": "weibo.com",
+            "type": 2,
             "title": "微博",
             "customed": false,
-            "href": "//weibo.com/aj/static/opensearch.xml",
-            "_comments": "https://github.com/lcandy2/oSearch/opensearch/weibo.com/README.md"
+            "href": "//weibo.com/aj/static/opensearch.xml"
         },
         "taobao.com": {
             "enabled": false,
-            "domain": "taobao.com",
+            "type": 1,
             "title": "淘宝购物",
-            "customed": true,
-            "href": "",
-            "_comments": "https://github.com/lcandy2/oSearch/opensearch/taobao.com/README.md"
+            "customed": true
         }
     }
 }

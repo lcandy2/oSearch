@@ -1,0 +1,12 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                      xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <InputEncoding>UTF-8</InputEncoding>
+  <ShortName>百度文库</ShortName>
+  <Description>百度文库搜索</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Url type="text/html" method="get" template="https://wenku.baidu.com/search">
+    <Param name="word" value="{searchTerms}"/>	
+    <Param name="ie" value="utf-8"/>
+  </Url>
+  <moz:SearchForm>https://wenku.baidu.com/search</moz:SearchForm>
+</OpenSearchDescription>
