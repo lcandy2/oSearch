@@ -15,7 +15,6 @@ let setLnSearch = (data) => {
         lnsearch.setAttribute("type", "application/opensearchdescription+xml");
         // should get from api
         lnsearch.setAttribute("title", data.title);
-        lnsearch.setAttribute("href", data.href);
     return lnsearch;
 };
 
@@ -27,31 +26,43 @@ let setLnSearch = (data) => {
 // Codes below are based on https://github.com/gregsadetsky/chrome-dont-add-custom-search-engines/blob/master/src/content.js
 // Special thanks to @gregsadetsky
 
-let setOpenSearch = (data) => {
+let setOpenSearch = (lnsearch) => {
     if ( document.querySelector('[type="application/opensearchdescription+xml"]') ) {
         if (DEBUG) console.info("OpenSearch already existed");
     } else {
-        let lnsearch = setLnSearch(data);
-        if (DEBUG) console.log("title: " + data.title);
-        if (DEBUG) console.log("href: " + data.href);
+        if (DEBUG) console.log("title: " + lnsearch.getAttribute("title"));
+        if (DEBUG) console.log("href: " + lnsearch.getAttribute("href"));
         document.getElementsByTagName("head")[0].appendChild(lnsearch);
         if (DEBUG) console.info("OpenSearch was set to " + lnsearch.getAttribute("href"));
     }
 } //setOpenSearch
 
-let onDOMContentLoaded = (data) => {
+let onDOMContentLoaded = (lnsearch) => {
     if (DEBUG) console.log("onDOMContentLoaded");
-    setOpenSearch(data);
+    setOpenSearch(lnsearch);
     window.addEventListener("load", function() {
         if (DEBUG) console.log("onload");
-        setOpenSearch(data);
+        setOpenSearch(lnsearch);
         if (DEBUG) console.log("All done");
     }); // #3
 } //onDOMContentLoaded
 
 chrome.storage.local.get(['json'],(result) => {
     let host = getHost();
+    if (DEBUG) console.log("Get local data already");
     if(result.json.opensearch[host] !== undefined) {
-        document.addEventListener("DOMContentLoaded", onDOMContentLoaded(result.json.opensearch[host]));
+        if (DEBUG) console.log("opensearch.json exist");
+        
+        // init lnsearch
+        let lnsearch = setLnSearch(result.json.opensearch[host]);
+        if(result.json.opensearch[host].type == (1 || 2)){
+            lnsearch.setAttribute("href", result.json.xmlUrl + host + "/opensearch.xml");
+        } else { 
+            lnsearch.setAttribute("href", result.json.opensearch[host].href);
+        }
+
+        document.addEventListener("DOMContentLoaded", onDOMContentLoaded(lnsearch));
+    } else {
+        if (DEBUG) console.log("opensearch.json don't exist");
     }
 });
