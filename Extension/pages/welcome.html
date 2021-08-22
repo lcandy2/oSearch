@@ -54,6 +54,7 @@
             margin-top: 5px;
             margin-bottom: 5px;
             width: fit-content;
+            text-align: left;
         }
         
         .welcome h1,
@@ -73,7 +74,7 @@
             font-weight: 325;
         }
         
-        .terms {
+        #terms {
             font-size: 12px;
             font-weight: 300;
             margin-top: 3rem;
@@ -89,13 +90,14 @@
             width: 170px;
         }
     </style>
+    <script src="./welcome.js"></script>
 </head>
 
 <body>
     <div class="welcome">
         <div class="osearch-logo"></div>
-        <h2>Welcome to oSearch</h2>
-        <h1>Select a way extension works.</h1>
+        <h2 id="welcome">Welcome to oSearch</h2>
+        <h1 id="initialization">Select a way extension works.</h1>
         <div id="opinion" class="opinion">
             <button id="default">
                 <div>
@@ -105,12 +107,12 @@
             </button>
             <button id="custome">
                 <div>
-                    <h1 id="defaultTitle">Custome</h1>
-                    <p id="defaultDescription">defaultDescription</p>
+                    <h1 id="customTitle">Custom</h1>
+                    <p id="customDescription">defaultDescription</p>
                 </div>
             </button>
         </div>
-        <p class="terms">You will connect to oSearch to update the basic data. For more imformations, here is the <a href="#">Terms</a></p>
+        <p id="terms">You will connect to oSearch to update the basic data. For more imformations, here is the <a href="#">Terms</a></p>
     </div>
 
 

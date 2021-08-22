@@ -7,16 +7,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>oSearch</title>
     <style>
-        body {
-            width: 250px;
-            height: 400px;
+        body,
+        p {
+            width: 180px;
+            background-color: rgb(255, 255, 255);
+            margin: 0px;
+        }
+        
+        .logo,
+        img {
+            background-image: url(../icons/icon.svg);
+            background-size: 2em 2em;
+            background-position: center center;
+            height: 2em;
+            width: 2em;
+            float: left;
+            margin-right: 10px;
+        }
+        
+        .header {
+            padding: 16px;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 1.25em;
+            margin: 0px;
+            font-weight: 500;
+        }
+        
+        .footer {
+            margin: 8px;
+            margin-top: 0px;
         }
     </style>
+    <script src=i18n.js></script>
 </head>
 
 <body>
-    <button id="js">Run</button>
-    <script src=popup.js></script>
+    <div class="header">
+        <h1 id="working">oSearch is working</h1>
+    </div>
+    <div class="main"></div>
+    <div class="footer">
+        <p><span id="more">To find out which sites osearch supports, please visit</span> <a href="https://github.com/lcandy2/oSearch" target="_blank">Github</a></p>
+    </div>
 </body>
 
 </html>

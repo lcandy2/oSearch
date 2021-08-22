@@ -1,1 +1,0 @@
-localStorage.opensearch = await fetch('https://osearch.vercel.app/opensearch.json');

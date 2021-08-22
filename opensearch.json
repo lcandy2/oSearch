@@ -2,6 +2,8 @@
     "version": "0.1",
     "date": "null",
     "xmlUrl": "https://osearch.vercel.app/opensearch/",
+    "xmlName": "/opensearch.xml",
+    "updateUrl": "https://raw.githubusercontent.com/lcandy2/oSearch/development/opensearch.json",
     "updateLog": "",
     "updateHistory": {},
     "opensearch": {
@@ -75,13 +77,29 @@
             "type": 2,
             "title": "微博",
             "customed": false,
-            "href": "//weibo.com/aj/static/opensearch.xml"
+            "href": "//weibo.com/aj/static/opensearch.xml",
+            "_comments": ""
         },
         "taobao.com": {
             "enabled": false,
             "type": 1,
             "title": "淘宝购物",
-            "customed": true
+            "customed": true,
+            "_comments": ""
+        },
+        "ximalaya.com": {
+            "enabled": false,
+            "type": 1,
+            "title": "喜马拉雅",
+            "customed": true,
+            "_comments": ""
+        },
+        "youku.com": {
+            "enabled": false,
+            "type": 1,
+            "title": "优酷视频搜索",
+            "customed": true,
+            "_comments": ""
         }
     }
 }
