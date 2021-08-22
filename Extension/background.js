@@ -5,12 +5,12 @@ chrome.runtime.onInstalled.addListener(() => {
 	)
 		.then((response) => response.json())
 		.then((data) => {
-            chrome.storage.local.set({
-                json: data
-            });
-        })
-        .catch(console.error);
-	
+			chrome.storage.local.set({
+				json: data,
+			});
+		})
+		.catch(console.error);
+
 	/*chrome.tabs.create({
         url: 'pages/welcome.html'
     });*/

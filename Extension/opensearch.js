@@ -1,19 +1,21 @@
 const DEBUG = true;
 
-let url = new URL(window.location.href);
-let host = url.host;
-host = host.replace("www.", "");
-if (DEBUG) console.log("current: " + host);
+let getHost = () => {
+    let url = new URL(window.location.href);
+    let host = url.host.replace("www.", "");
+    if (DEBUG) console.log("current: " + host);
+    return host;
+};
 
 // suggestions link
 // ignore for now
-let lnsg = document.createElement("link");
-lnsg.setAttribute("rel", "suggestions");
+// let lnsg = document.createElement("link");
+// lnsg.setAttribute("rel", "suggestions");
 
 // Codes below are based on https://github.com/gregsadetsky/chrome-dont-add-custom-search-engines/blob/master/src/content.js
 // Special thanks to @gregsadetsky
 
-function setOpenSearch(data) {
+let setOpenSearch = (data) => {
     if (
         document.querySelector('[type="application/opensearchdescription+xml"]')
     ) {
@@ -33,7 +35,7 @@ function setOpenSearch(data) {
     }
 } //setOpenSearch
 
-function onDOMContentLoaded(data) {
+let onDOMContentLoaded = (data) => {
     if (DEBUG) console.log("onDOMContentLoaded");
     setOpenSearch(data);
     window.addEventListener("load", function() {
@@ -44,6 +46,7 @@ function onDOMContentLoaded(data) {
 } //onDOMContentLoaded
 
 chrome.storage.local.get(['json'],(result) => {
+    let host = getHost();
     if(result.json.opensearch[host] !== undefined) {
         document.addEventListener("DOMContentLoaded", onDOMContentLoaded(result.json.opensearch[host]));
     }
