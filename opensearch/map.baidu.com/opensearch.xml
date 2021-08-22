@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                      xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <InputEncoding>UTF-8</InputEncoding>
+  <ShortName>百度地图</ShortName>
+  <Description>百度地图搜索</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Url type="text/html" template="https://map.baidu.com/search/@?querytype=s&wd={searchTerms}"/>
+  <moz:SearchForm>https://map.baidu.com/search</moz:SearchForm>
+</OpenSearchDescription>
+

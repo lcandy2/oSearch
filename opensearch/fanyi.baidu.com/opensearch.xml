@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <InputEncoding>UTF-8</InputEncoding>
+  <ShortName>百度翻译</ShortName>
+  <Description>200种语言互译、沟通全世界！</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+    <Image height="32" width="32" type="image/x-icon">
+        https://fanyi-cdn.cdn.bcebos.com/static/translation/img/favicon/favicon_d87cd2a.ico
+    </Image>
+  <Url type="text/html" template="https://fanyi.baidu.com/#auto//{searchTerms}"/>
+</OpenSearchDescription>
