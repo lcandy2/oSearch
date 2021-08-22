@@ -14,22 +14,6 @@ xhr.open(
 xhr.send();
 let data = JSON.parse(xhr.responseText)
 
-if (data.opensearch[host].enabled) {
-    if (DEBUG) console.log("[" + data.opensearch[host].enabled + "] OpenSearch was enabled.");
-} else {
-    if (DEBUG) console.log("[" + data.opensearch[host].enabled + "] OpenSearch was disabled, script is going to stop.[1]");
-}
-
-// tab to search link
-let lnsearch = document.createElement("link");
-lnsearch.setAttribute("rel", "search");
-lnsearch.setAttribute("type", "application/opensearchdescription+xml");
-// should get from api
-lnsearch.setAttribute("title", data.opensearch[host].title);
-lnsearch.setAttribute("href", data.opensearch[host].href);
-if (DEBUG) console.log("title: " + lnsearch.getAttribute("title"));
-if (DEBUG) console.log("href: " + lnsearch.getAttribute("href"));
-
 // suggestions link
 // ignore for now
 let lnsg = document.createElement("link");
@@ -44,6 +28,15 @@ function setOpenSearch() {
     ) {
         if (DEBUG) console.info("OpenSearch already existed");
     } else {
+        // tab to search link
+        let lnsearch = document.createElement("link");
+        lnsearch.setAttribute("rel", "search");
+        lnsearch.setAttribute("type", "application/opensearchdescription+xml");
+        // should get from api
+        lnsearch.setAttribute("title", data.opensearch[host].title);
+        lnsearch.setAttribute("href", data.opensearch[host].href);
+        if (DEBUG) console.log("title: " + lnsearch.getAttribute("title"));
+        if (DEBUG) console.log("href: " + lnsearch.getAttribute("href"));
         document.getElementsByTagName("head")[0].appendChild(lnsearch);
         if (DEBUG) console.info("OpenSearch was set to " + lnsearch.getAttribute("href"));
     }
@@ -59,4 +52,6 @@ function onDOMContentLoaded() {
     }); // #3
 } //onDOMContentLoaded
 
-document.addEventListener("DOMContentLoaded", onDOMContentLoaded);
+if(data.opensearch[host] !== undefined) {
+    document.addEventListener("DOMContentLoaded", onDOMContentLoaded);
+}
