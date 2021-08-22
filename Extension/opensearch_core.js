@@ -3,31 +3,41 @@
 let lnsearch = document.createElement("link");
 lnsearch.setAttribute("rel", "search");
 lnsearch.setAttribute("type", "application/opensearchdescription+xml");
-lnsearch.setAttribute("href", "https://v.qq.com/opensearch.xml");
-lnsearch.setAttribute("title", "爱奇艺");
-console.info("[DEBUG] title: " + lnsearch.getAttribute("title"));
-console.info("[DEBUG] href: " + lnsearch.getAttribute("href"));
+//
+lnsearch.setAttribute("href", "");
+
+lnsearch.setAttribute("title", "oSearch");
 
 function setOpenSearch() {
     if (
         document.querySelector('[type="application/opensearchdescription+xml"]')
     ) {
-        console.error("[DEBUG] OpenSearch already existed");
+        console.log("[DEBUG] OpenSearch already existed");
+        removeOpenSearch();
+        setOpenSearch();
     } else {
-        console.info("[DEBUG] " + lnsearch + " is going to be appendChild");
         document.getElementsByTagName("head")[0].appendChild(lnsearch);
         console.log("[DEBUG] OpenSearch was set to " + lnsearch.getAttribute("href"));
     }
 }
 
 function onDOMContentLoaded() {
-    console.log("onDOMContentLoaded");
+    console.log("[DEBUG] onDOMContentLoaded");
     setOpenSearch();
     window.addEventListener("load", function() {
         console.log("[DEBUG] onload");
-        setOpenSearch();
+        //setOpenSearch();
         console.log("[DEBUG] All done!");
     });
+}
+
+function removeOpenSearch() {
+    document.querySelectorAll('[type="application/opensearchdescription+xml" i]').forEach(
+        function(it) {
+            it.removeAttribute('type');
+            console.log({ "[DEBUG] Spoiled by type removal": it });
+        }
+    );
 }
 
 document.addEventListener("DOMContentLoaded", onDOMContentLoaded);

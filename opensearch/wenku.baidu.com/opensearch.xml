@@ -2,7 +2,7 @@
                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
   <InputEncoding>UTF-8</InputEncoding>
   <ShortName>百度文库</ShortName>
-  <Description>百度文库搜索</Description>
+  <Description>在 百度文库 上搜索</Description>
   <InputEncoding>UTF-8</InputEncoding>
   <Url type="text/html" method="get" template="https://wenku.baidu.com/search">
     <Param name="word" value="{searchTerms}"/>	

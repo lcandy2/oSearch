@@ -34,25 +34,25 @@
             "_comments ": ""
         },
         "fanyi.baidu.com": {
-            "enabled": false,
+            "enabled": true,
             "type": 1,
             "title": "百度翻译",
             "_comments ": ""
         },
         "map.baidu.com": {
-            "enabled": false,
+            "enabled": true,
             "type": 1,
             "title": "百度地图",
             "_comments ": ""
         },
         "wenku.baidu.com": {
-            "enabled": false,
+            "enabled": true,
             "type": 1,
             "title": "百度文库",
             "_comments ": ""
         },
         "iqiyi.com": {
-            "enabled": false,
+            "enabled": true,
             "type": 1,
             "title": "爱奇艺",
             "_comments ": ""
