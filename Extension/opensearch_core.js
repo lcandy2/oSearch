@@ -4,7 +4,7 @@ let lnsearch = document.createElement("link");
 lnsearch.setAttribute("rel", "search");
 lnsearch.setAttribute("type", "application/opensearchdescription+xml");
 //
-lnsearch.setAttribute("href", "https://osearch.vercel.app/opensearch/youku.com/opensearch.xml");
+lnsearch.setAttribute("href", "");
 
 lnsearch.setAttribute("title", "oSearch");
 
