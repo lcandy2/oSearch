@@ -1,0 +1,149 @@
+{
+    "version": "0.1",
+    "date": "null",
+    "xmlUrl": "https://osearch.vercel.app/opensearch/",
+    "xmlName": "/opensearch.xml",
+    "updateUrl": "https://raw.githubusercontent.com/lcandy2/oSearch/main/opensearch.json",
+    "updateLog": "",
+    "updateHistory": {},
+    "opensearch": {
+        "declear": {
+            "type = 1": {
+                "method": "Adding missing OpenSearch using repo xml",
+                "href": "<xmlUrl> + host + /opensearch.xml"
+            },
+            "type = 2": {
+                "method": "Using repo xml to fix OpenSearch not works properly",
+                "href": "<xmlUrl> + host + /opensearch.xml"
+            },
+            "type = 3": {
+                "method": "Adding missing OpenSearch using origin xml, [href] is needed!",
+                "href": "herf in THIS json"
+            },
+            "type = 4": {
+                "method": "Adding missing OpenSearch using CUSTOM xml, [href] is needed!",
+                "href": "herf in THIS json"
+            },
+            "type = 5": {
+                "method": "Using CUSTOM xml to fix OpenSearch not works properly, [href] is needed!",
+                "href": "herf in THIS json"
+            }
+        },
+        "bilibili.com": {
+            "enabled": true,
+            "type": 1,
+            "title": "哔哩哔哩",
+            "_comments ": ""
+        },
+        "fanyi.baidu.com": {
+            "enabled": true,
+            "type": 1,
+            "title": "百度翻译",
+            "_comments ": ""
+        },
+        "map.baidu.com": {
+            "enabled": true,
+            "type": 1,
+            "title": "百度地图",
+            "_comments ": ""
+        },
+        "wenku.baidu.com": {
+            "enabled": true,
+            "type": 1,
+            "title": "百度文库",
+            "_comments ": ""
+        },
+        "iqiyi.com": {
+            "enabled": true,
+            "type": 1,
+            "title": "爱奇艺",
+            "_comments ": ""
+        },
+        "douban.com": {
+            "enabled": true,
+            "type": 3,
+            "title": "豆瓣",
+            "href": "//www.douban.com/opensearch",
+            "_comments": ""
+        },
+        "zhihu.com": {
+            "enabled": true,
+            "type": 2,
+            "title": "知乎",
+            "_comments": "可能需要登录后才能生效"
+        },
+        "weibo.com": {
+            "enabled": false,
+            "type": 2,
+            "title": "微博",
+            "href": "//weibo.com/aj/static/opensearch.xml",
+            "_comments": ""
+        },
+        "taobao.com": {
+            "enabled": true,
+            "type": 1,
+            "title": "淘宝购物",
+            "_comments": ""
+        },
+        "ximalaya.com": {
+            "enabled": true,
+            "type": 1,
+            "title": "喜马拉雅",
+            "_comments": ""
+        },
+        "youku.com": {
+            "enabled": true,
+            "type": 1,
+            "title": "优酷视频搜索",
+            "_comments": ""
+        },
+        "v2ex.com": {
+            "enabled": true,
+            "type": 1,
+            "title": "V2EX",
+            "_comments": ""
+        },
+        "youdao.com": {
+            "enabled": true,
+            "type": 1,
+            "title": "有道词典",
+            "_comments": ""
+        },
+        "mgtv.com": {
+            "enabled": true,
+            "type": 1,
+            "title": "芒果TV",
+            "_comments": ""
+        },
+        "sspai.com": {
+            "enabled": true,
+            "type": 1,
+            "title": "少数派",
+            "_comments": ""
+        },
+        "wenshu.court.gov.cn": {
+            "enabled": true,
+            "type": 1,
+            "title": "中国裁判文书网",
+            "_comments": "可能需要长期维护"
+        },
+        "gushiwen.cn": {
+            "enabled": true,
+            "type": 1,
+            "title": "古诗文网",
+            "_comments": ""
+        },
+        "xueshu.baidu.com": {
+            "enabled": true,
+            "type": 1,
+            "title": "百度学术",
+            "_comments ": ""
+        },
+        "tmall.com": {
+            "enabled": true,
+            "type": 2,
+            "title": "天猫Tmall.com",
+            "_comments ": ""
+        }
+    }
+}

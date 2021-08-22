@@ -1,0 +1,11 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                      xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <InputEncoding>UTF-8</InputEncoding>
+  <ShortName>有道词典</ShortName>
+  <Description>获取由 有道词典 提供的释义。</Description>
+    <Image height="16" width="16" type="image/x-icon">
+        https://shared.ydstatic.com/images/favicon.ico
+    </Image>
+  <Url type="text/html" method="get" template="https://youdao.com/w//1{searchTerms}"/>
+  <moz:SearchForm>https://fanyi.baidu.com/</moz:SearchForm>
+</OpenSearchDescription>

@@ -1,0 +1,11 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                      xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <InputEncoding>UTF-8</InputEncoding>
+  <ShortName>百度翻译</ShortName>
+  <Description>获取由 百度翻译 提供的译文。</Description>
+    <Image height="32" width="32" type="image/x-icon">
+        https://fanyi.baidu.com/favicon.ico
+    </Image>
+  <Url type="text/html" method="get" template="https://fanyi.baidu.com/#auto//{searchTerms}"/>
+  <moz:SearchForm>https://fanyi.baidu.com/</moz:SearchForm>
+</OpenSearchDescription>

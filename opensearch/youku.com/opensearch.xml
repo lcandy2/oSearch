@@ -1,0 +1,11 @@
+
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+<ShortName>优酷视频搜索</ShortName>
+<Description>搜索优酷网 YouKu.com 视频</Description>
+<Image width="48" height="48">
+https://www.youku.com/favicon.ico
+</Image>
+<InputEncoding>UTF-8</InputEncoding>
+<OutputEncoding>UTF-8</OutputEncoding>
+<Url type="text/html" template="https://so.youku.com/search_video/q_{searchTerms}"/>
+</OpenSearchDescription>

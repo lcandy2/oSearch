@@ -1,0 +1,11 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                      xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>爱奇艺</ShortName>
+  <Description>在 爱奇艺 上搜索视频</Description>
+    <Image height="16" width="16" type="image/x-icon">
+      https://www.iqiyi.com/favicon.ico
+    </Image>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Url type="text/html" method="get" template="https://so.iqiyi.com/so/q_{searchTerms}"/>
+  <moz:SearchForm>https://so.iqiyi.com/</moz:SearchForm>
+</OpenSearchDescription>
