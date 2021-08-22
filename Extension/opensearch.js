@@ -1,6 +1,6 @@
 "use strict";
 
-const DEBUG = false;
+const DEBUG = true;
 
 let getHost = () => {
     let url = new URL(window.location.href);
@@ -60,9 +60,9 @@ chrome.storage.local.get(['json'], (result) => {
     if (DEBUG) console.info("current: " + host);
     if (result.json.opensearch[host] !== undefined) {
         if (DEBUG) console.log("opensearch.json exist");
-
         // init lnsearch
         let lnsearch = setlnSearch(result.json.opensearch[host]);
+        if (DEBUG) console.log("type is " + result.json.opensearch[host].type);
         if (result.json.opensearch[host].type == (1 || 2)) {
             lnsearch.setAttribute("href", result.json.xmlUrl + host + result.json.xmlName);
         } else {
@@ -72,6 +72,7 @@ chrome.storage.local.get(['json'], (result) => {
             removeOpenSearch(lnsearch);
             if (DEBUG) console.log("turn to remove OpenSearch");
         }
+        if (DEBUG) console.log("enabled? " + result.json.opensearch[host].enabled);
         if (result.json.opensearch[host].enabled) {
             document.addEventListener("DOMContentLoaded", onDOMContentLoaded(lnsearch));
         }
