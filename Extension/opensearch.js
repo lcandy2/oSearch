@@ -1,40 +1,35 @@
+"use strict";
+
 const DEBUG = true;
 
-let url = new URL(window.location.href);
-let host = url.host;
-host = host.replace("www.", "");
-if (DEBUG) console.log("current: " + host);
+let getHost = () => {
+    let url = new URL(window.location.href);
+    let host = url.host.replace("www.", "");
+    if (DEBUG) console.log("current: " + host);
+    return host;
+};
 
-let xhr = new XMLHttpRequest();
-xhr.open(
-    "GET",
-    "https://raw.githubusercontent.com/lcandy2/oSearch/development/opensearch.json",
-    false
-);
-xhr.send();
-let data = JSON.parse(xhr.responseText)
+let setLnSearch = (data) => {
+    let lnsearch = document.createElement("link");
+        lnsearch.setAttribute("rel", "search");
+        lnsearch.setAttribute("type", "application/opensearchdescription+xml");
+        // should get from api
+        lnsearch.setAttribute("title", data.title);
+    return lnsearch;
+};
 
 // suggestions link
 // ignore for now
-let lnsg = document.createElement("link");
-lnsg.setAttribute("rel", "suggestions");
+// let lnsg = document.createElement("link");
+// lnsg.setAttribute("rel", "suggestions");
 
 // Codes below are based on https://github.com/gregsadetsky/chrome-dont-add-custom-search-engines/blob/master/src/content.js
 // Special thanks to @gregsadetsky
 
-function setOpenSearch() {
-    if (
-        document.querySelector('[type="application/opensearchdescription+xml"]')
-    ) {
+let setOpenSearch = (lnsearch) => {
+    if ( document.querySelector('[type="application/opensearchdescription+xml"]') ) {
         if (DEBUG) console.info("OpenSearch already existed");
     } else {
-        // tab to search link
-        let lnsearch = document.createElement("link");
-        lnsearch.setAttribute("rel", "search");
-        lnsearch.setAttribute("type", "application/opensearchdescription+xml");
-        // should get from api
-        lnsearch.setAttribute("title", data.opensearch[host].title);
-        lnsearch.setAttribute("href", data.opensearch[host].href);
         if (DEBUG) console.log("title: " + lnsearch.getAttribute("title"));
         if (DEBUG) console.log("href: " + lnsearch.getAttribute("href"));
         document.getElementsByTagName("head")[0].appendChild(lnsearch);
@@ -42,16 +37,32 @@ function setOpenSearch() {
     }
 } //setOpenSearch
 
-function onDOMContentLoaded() {
+let onDOMContentLoaded = (lnsearch) => {
     if (DEBUG) console.log("onDOMContentLoaded");
-    setOpenSearch();
+    setOpenSearch(lnsearch);
     window.addEventListener("load", function() {
         if (DEBUG) console.log("onload");
-        setOpenSearch();
+        setOpenSearch(lnsearch);
         if (DEBUG) console.log("All done");
     }); // #3
 } //onDOMContentLoaded
 
-if(data.opensearch[host] !== undefined) {
-    document.addEventListener("DOMContentLoaded", onDOMContentLoaded);
-}
+chrome.storage.local.get(['json'],(result) => {
+    let host = getHost();
+    if (DEBUG) console.log("Get local data already");
+    if(result.json.opensearch[host] !== undefined) {
+        if (DEBUG) console.log("opensearch.json exist");
+        
+        // init lnsearch
+        let lnsearch = setLnSearch(result.json.opensearch[host]);
+        if(result.json.opensearch[host].type == (1 || 2)){
+            lnsearch.setAttribute("href", result.json.xmlUrl + host + "/opensearch.xml");
+        } else { 
+            lnsearch.setAttribute("href", result.json.opensearch[host].href);
+        }
+
+        document.addEventListener("DOMContentLoaded", onDOMContentLoaded(lnsearch));
+    } else {
+        if (DEBUG) console.log("opensearch.json don't exist");
+    }
+});
