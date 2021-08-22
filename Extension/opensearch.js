@@ -1,3 +1,5 @@
+"use strict";
+
 const DEBUG = true;
 
 let getHost = () => {
@@ -5,6 +7,16 @@ let getHost = () => {
     let host = url.host.replace("www.", "");
     if (DEBUG) console.log("current: " + host);
     return host;
+};
+
+let setLnSearch = (data) => {
+    let lnsearch = document.createElement("link");
+        lnsearch.setAttribute("rel", "search");
+        lnsearch.setAttribute("type", "application/opensearchdescription+xml");
+        // should get from api
+        lnsearch.setAttribute("title", data.title);
+        lnsearch.setAttribute("href", data.href);
+    return lnsearch;
 };
 
 // suggestions link
@@ -16,20 +28,12 @@ let getHost = () => {
 // Special thanks to @gregsadetsky
 
 let setOpenSearch = (data) => {
-    if (
-        document.querySelector('[type="application/opensearchdescription+xml"]')
-    ) {
+    if ( document.querySelector('[type="application/opensearchdescription+xml"]') ) {
         if (DEBUG) console.info("OpenSearch already existed");
     } else {
-        // tab to search link
-        let lnsearch = document.createElement("link");
-        lnsearch.setAttribute("rel", "search");
-        lnsearch.setAttribute("type", "application/opensearchdescription+xml");
-        // should get from api
-        lnsearch.setAttribute("title", data.title);
-        lnsearch.setAttribute("href", data.href);
-        if (DEBUG) console.log("title: " + lnsearch.getAttribute("title"));
-        if (DEBUG) console.log("href: " + lnsearch.getAttribute("href"));
+        let lnsearch = setLnSearch(data);
+        if (DEBUG) console.log("title: " + data.title);
+        if (DEBUG) console.log("href: " + data.href);
         document.getElementsByTagName("head")[0].appendChild(lnsearch);
         if (DEBUG) console.info("OpenSearch was set to " + lnsearch.getAttribute("href"));
     }
