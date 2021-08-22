@@ -1,7 +1,7 @@
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
   <ShortName>爱奇艺</ShortName>
-  <Description>全网视频搜索引擎</Description>
+  <Description>在 爱奇艺 上搜索视频</Description>
   <InputEncoding>UTF-8</InputEncoding>
   <Url type="text/html" method="get" template="https://so.iqiyi.com/so/q_{searchTerms}"/>
   <moz:SearchForm>https://so.iqiyi.com/</moz:SearchForm>

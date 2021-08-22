@@ -2,7 +2,7 @@
                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
   <InputEncoding>UTF-8</InputEncoding>
   <ShortName>百度翻译</ShortName>
-  <Description>200种语言互译、沟通全世界！</Description>
+  <Description>获取由 百度翻译 提供的译文。</Description>
     <Image height="32" width="32" type="image/x-icon">
         https://fanyi-cdn.cdn.bcebos.com/static/translation/img/favicon/favicon_d87cd2a.ico
     </Image>

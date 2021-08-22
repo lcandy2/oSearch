@@ -1,2 +1,2 @@
 # fanyi.baidu.com
-This is an original OpenSearch description document(OSDD).
+This is an extension-attached OpenSearch description document(OSDD).
