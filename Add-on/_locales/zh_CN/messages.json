@@ -1,0 +1,38 @@
+{
+    "lnext_name": {
+        "message": "oSearch：基于 OpenSearch 的快捷搜索"
+    },
+    "lnext_description": {
+        "message": "为常用的网站添加 OpenSearch 搜索引擎，以在地址栏中使用空格键或 Tab 键方便快捷地在网站内搜索。"
+    },
+    "page_welcome_welcome": {
+        "message": "欢迎使用 oSearch"
+    },
+    "page_welcome_initialization": {
+        "message": "选择 oSearch 的工作方式"
+    },
+    "page_welcome_default": {
+        "message": "默认"
+    },
+    "page_welcome_default_description": {
+        "message": "使用 oSearch 推荐的默认配置。"
+    },
+    "page_welcome_custom": {
+        "message": "高级"
+    },
+    "page_welcome_custom_description": {
+        "message": "自定义 oSearch 的工作方式。\n如果你不明白这意味着什么，请选择“默认”"
+    },
+    "page_welcome_terms": {
+        "message": "感谢您下载 oSearch。\n继续将会连接至 oSearch 获取必要信息，"
+    },
+    "page_welcome_terms_link": {
+        "message": "关于使用条款与隐私政策"
+    },
+    "page_popup_working": {
+        "message": "oSearch 正在运行"
+    },
+    "page_popup_more": {
+        "message": "要了解 oSearch 支持哪些网站，请访问"
+    }
+}
