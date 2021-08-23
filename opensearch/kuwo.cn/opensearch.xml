@@ -1,0 +1,13 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                      xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>酷我音乐</ShortName>
+  <Description>在 酷我音乐 上搜索</Description>
+    <Image height="30" width="30" type="image/x-icon">
+      https://www.kuwo.cn/favicon.ico
+    </Image>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Url type="text/html" method="get" template="https://www.kuwo.cn/search/list">
+    <Param name="key" value="{searchTerms}"/>	
+  </Url>
+  <moz:SearchForm>https://www.kuwo.cn/</moz:SearchForm>
+</OpenSearchDescription>

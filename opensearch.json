@@ -1,9 +1,9 @@
 {
-    "version": "0.1.8",
-    "date": "2021-08-22T17:45:37.839Z",
-    "xmlUrl": "https://osearch.vercel.app/opensearch/",
+    "version": "0.1.8.3",
+    "date": "2021-08-23T07:56:42.927Z",
+    "xmlUrl": "//osearch.vercel.app/opensearch/",
     "xmlName": "/opensearch.xml",
-    "updateUrl": "https://raw.githubusercontent.com/lcandy2/oSearch/main/opensearch.json",
+    "updateUrl": "https://osearch.vercel.app/opensearch.json",
     "updateLog": "",
     "updateHistory": {},
     "opensearch": {
@@ -144,6 +144,97 @@
             "type": 2,
             "title": "天猫Tmall.com",
             "_comments ": ""
+        },
+        "music.163.com": {
+            "enabled": true,
+            "type": 1,
+            "title": "网易云音乐",
+            "_comments ": ""
+        },
+        "y.qq.com": {
+            "enabled": true,
+            "type": 1,
+            "title": "QQ音乐",
+            "_comments ": ""
+        },
+        "kugou.com": {
+            "enabled": true,
+            "type": 1,
+            "title": "酷狗音乐",
+            "_comments ": ""
+        },
+        "kuwo.cn": {
+            "enabled": true,
+            "type": 1,
+            "title": "酷我音乐",
+            "_comments ": ""
+        },
+        "reddit.com": {
+            "enabled": true,
+            "type": 3,
+            "title": "reddit",
+            "href": "//www.reddit.com/static/opensearch.xml",
+            "_comments": ""
+        },
+        "tiktok.com": {
+            "enabled": true,
+            "type": 1,
+            "title": "TikTok",
+            "_comments": ""
+        },
+        "cowlevel.net": {
+            "enabled": true,
+            "type": 1,
+            "title": "奶牛关",
+            "_comments": "可能需要重新登录账号后才能生效"
+        },
+        "indienova.com": {
+            "enabled": true,
+            "type": 1,
+            "title": "indienova",
+            "_comments": ""
+        },
+        "taptap.com": {
+            "enabled": true,
+            "type": 1,
+            "title": "TapTap",
+            "_comments": ""
+        },
+        "apps.qoo-app.com": {
+            "enabled": true,
+            "type": 1,
+            "title": "QooApp",
+            "_comments": "You might have to change the language to 中文(Chinese) to make it work."
+        },
+        "pixiv.net": {
+            "enabled": true,
+            "type": 1,
+            "title": "pixiv",
+            "_comments": "English may result in not working properly, please setting to other languages."
+        },
+        "jjwxc.net": {
+            "enabled": true,
+            "type": 1,
+            "title": "晋江文学城",
+            "_comments": ""
+        },
+        "douyu.com": {
+            "enabled": true,
+            "type": 1,
+            "title": "斗鱼",
+            "_comments": ""
+        },
+        "douyin.com": {
+            "enabled": true,
+            "type": 1,
+            "title": "抖音",
+            "_comments": ""
+        },
+        "mcbbs.net": {
+            "enabled": true,
+            "type": 1,
+            "title": "Minecraft(我的世界)中文论坛",
+            "_comments": ""
         }
     }
 }

@@ -1,0 +1,11 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>抖音</ShortName>
+  <Description>在 抖音 上搜索视频</Description>
+    <Image height="32" width="32" type="image/x-icon">
+      https://lf1-cdn-tos.bytegoofy.com/goofy/ies/douyin_web/public/favicon.ico
+    </Image>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Url type="text/html" method="get" template="https://www.douyin.com/search/{searchTerms}" />
+  <moz:SearchForm>https://www.douyin.com</moz:SearchForm>
+</OpenSearchDescription>

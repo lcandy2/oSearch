@@ -1,0 +1,13 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>TikTok</ShortName>
+  <Description>TikTok</Description>
+    <Image height="152" width="152" type="image/x-icon">
+      https://www.tiktok.com/favicon.ico
+    </Image>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Url type="text/html" method="get" template="https://www.tiktok.com/search">
+    <Param name="q" value="{searchTerms}"/>	
+  </Url>
+  <moz:SearchForm>https://www.tiktok.com/search</moz:SearchForm>
+</OpenSearchDescription>

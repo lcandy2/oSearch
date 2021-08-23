@@ -1,0 +1,14 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>MCBBS</ShortName>
+  <Description>在 MCBBS 上搜索帖子</Description>
+    <Image height="16" width="16" type="image/x-icon">
+      https://www.mcbbs.net/favicon.ico
+    </Image>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Url type="text/html" method="get" template="https://www.mcbbs.net/search.php">
+    <Param name="searchsubmit" value="yes"/>	
+    <Param name="wd" value="{searchTerms}"/>
+  </Url>
+  <moz:SearchForm>https://www.mcbbs.net/search.php</moz:SearchForm>
+</OpenSearchDescription>

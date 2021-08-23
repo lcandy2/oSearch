@@ -1,0 +1,13 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>QQ音乐</ShortName>
+  <Description>在 QQ音乐 上搜索</Description>
+    <Image height="32" width="32" type="image/x-icon">
+      https://y.qq.com/favicon.ico
+    </Image>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Url type="text/html" method="get" template="https://y.qq.com/n/ryqq/search">
+    <Param name="w" value="{searchTerms}"/>	
+  </Url>
+  <moz:SearchForm>https://y.qq.com/n/ryqq/search</moz:SearchForm>
+</OpenSearchDescription>

@@ -1,0 +1,11 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                      xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <InputEncoding>UTF-8</InputEncoding>
+  <ShortName>酷狗音乐</ShortName>
+  <Description>在 酷狗音乐 上搜索</Description>
+    <Image height="16" width="16" type="image/x-icon">
+        https://www.kugou.com/favicon.ico
+    </Image>
+  <Url type="text/html" method="get" template="https://www.kugou.com/yy/html/search.html#searchKeyWord={searchTerms}"/>
+  <moz:SearchForm>https://www.kugou.com/</moz:SearchForm>
+</OpenSearchDescription>

@@ -64,12 +64,12 @@ chrome.storage.local.get(['json'], (result) => {
         // init lnsearch
         let lnsearch = setlnSearch(result.json.opensearch[host]);
         if (DEBUG) console.log("type is " + result.json.opensearch[host].type);
-        if (result.json.opensearch[host].type = (1 || 2)) {
+        if (result.json.opensearch[host].type === (1 || 2)) {
             lnsearch.setAttribute("href", result.json.xmlUrl + host + result.json.xmlName);
         } else {
             lnsearch.setAttribute("href", result.json.opensearch[host].href);
         }
-        if (result.json.opensearch[host].type = (2 || 5)) {
+        if (result.json.opensearch[host].type === (2 || 5)) {
             removeOpenSearch(lnsearch);
             if (DEBUG) console.log("turn to remove OpenSearch");
         }

@@ -1,0 +1,11 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>pixiv</ShortName>
+  <Description>pixiv</Description>
+    <Image height="48" width="48" type="image/x-icon">
+      https://www.pixiv.net/favicon.ico
+    </Image>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Url type="text/html" method="get" template="https://www.pixiv.net/tags/{searchTerms}" />
+  <moz:SearchForm>https://www.pixiv.net/tags/</moz:SearchForm>
+</OpenSearchDescription>
