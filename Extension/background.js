@@ -1,18 +1,31 @@
 // Initialization
 chrome.runtime.onInstalled.addListener(() => {
-    fetch("https://raw.githubusercontent.com/lcandy2/oSearch/development/opensearch.json")
-        .then((response) => response.json())
-        .then((data) => {
-            chrome.storage.local.set({ json: data, });
-        })
-        .catch(console.error);
+    chrome.storage.local.get(['updateUrl'], (updUrl) => {
+        if (updUrl.updateUrl = 'underfined') {
+            chrome.storage.local.set({ updateUrl: "https://raw.githubusercontent.com/lcandy2/oSearch/main/opensearch.json" }, );
+            update();
+        } else { update(); }
+    });
 });
+
+// Update
+chrome.runtime.onStartup.addListener(() => {
+    update();
+});
+
+function update() {
+    chrome.storage.local.get(['updateUrl'], (updUrl) => {
+        fetch(updUrl.updateUrl)
+            .then((response) => response.json())
+            .then((data) => {
+                chrome.storage.local.set({ json: data, });
+                chrome.storage.local.set({ updateUrl: data.updateUrl, });
+            })
+            .catch(console.error);
+    })
+}
 
 /*
-chrome.runtime.onStartup.addListener(() => {
-	//check update
-});
-
 chrome.storage.local.get(['initialized'], (result) => {
         console.log(result.initialized);
         if (result.initialized = 'underfined') {
