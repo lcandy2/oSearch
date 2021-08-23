@@ -1,6 +1,6 @@
 {
-    "version": "0.1.8.1",
-    "date": "2021-08-22T17:45:37.839Z",
+    "version": "0.1.8.3",
+    "date": "2021-08-23T07:56:42.927Z",
     "xmlUrl": "//osearch.vercel.app/opensearch/",
     "xmlName": "/opensearch.xml",
     "updateUrl": "https://osearch.vercel.app/opensearch.json",
