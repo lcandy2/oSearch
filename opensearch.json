@@ -3,7 +3,7 @@
     "date": "2021-08-22T17:45:37.839Z",
     "xmlUrl": "//osearch.vercel.app/opensearch/",
     "xmlName": "/opensearch.xml",
-    "updateUrl": "https://raw.githubusercontent.com/lcandy2/oSearch/main/opensearch.json",
+    "updateUrl": "https://osearch.vercel.app/opensearch/opensearch.json",
     "updateLog": "",
     "updateHistory": {},
     "opensearch": {
