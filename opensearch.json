@@ -1,7 +1,7 @@
 {
-    "version": "0.1.8",
+    "version": "0.1.8.1",
     "date": "2021-08-22T17:45:37.839Z",
-    "xmlUrl": "https://osearch.vercel.app/opensearch/",
+    "xmlUrl": "//osearch.vercel.app/opensearch/",
     "xmlName": "/opensearch.xml",
     "updateUrl": "https://raw.githubusercontent.com/lcandy2/oSearch/main/opensearch.json",
     "updateLog": "",
@@ -144,6 +144,37 @@
             "type": 2,
             "title": "天猫Tmall.com",
             "_comments ": ""
+        },
+        "music.163.com": {
+            "enabled": true,
+            "type": 1,
+            "title": "网易云音乐",
+            "_comments ": ""
+        },
+        "y.qq.com": {
+            "enabled": true,
+            "type": 1,
+            "title": "QQ音乐",
+            "_comments ": ""
+        },
+        "kugou.com": {
+            "enabled": true,
+            "type": 1,
+            "title": "酷狗音乐",
+            "_comments ": ""
+        },
+        "kuwo.cn": {
+            "enabled": true,
+            "type": 1,
+            "title": "酷我音乐",
+            "_comments ": ""
+        },
+        "reddit.com": {
+            "enabled": true,
+            "type": 3,
+            "title": "reddit",
+            "href": "//www.reddit.com/static/opensearch.xml",
+            "_comments": ""
         }
     }
 }
