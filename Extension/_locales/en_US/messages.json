@@ -1,6 +1,6 @@
 {
     "lnext_name": {
-        "message": "oSearch: Quick search via OpenSearch"
+        "message": "oSearch: Search via OpenSearch"
     },
     "lnext_description": {
         "message": "Add OpenSearch for websites to make searching through websites easy and fast by using the Space or Tab in the address bar."
