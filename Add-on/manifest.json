@@ -2,7 +2,7 @@
     "name": "__MSG_lnext_name__",
     "description": "__MSG_lnext_description__",
     "author": "Lcandy",
-    "version": "0.1.8.2",
+    "version": "0.1.8.4",
     "default_locale": "en",
     "manifest_version": 2,
     "icons": {
@@ -12,7 +12,7 @@
         "128": "./icons/fluent128.png"
     },
     "content_scripts": [{
-        "matches": ["https://*/", "http://*/"],
+        "matches": ["https://*/*", "http://*/*"],
         "js": ["./opensearch.js"],
         "run_at": "document_start"
     }],
