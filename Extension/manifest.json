@@ -2,7 +2,7 @@
     "name": "__MSG_lnext_name__",
     "description": "__MSG_lnext_description__",
     "author": "Lcandy",
-    "version": "0.1.8",
+    "version": "0.1.8.1",
     "default_locale": "en",
     "manifest_version": 3,
     "icons": {
