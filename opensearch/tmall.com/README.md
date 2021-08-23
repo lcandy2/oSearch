@@ -6,4 +6,4 @@ Removed some code that made OpenSearch not work properly in Chrome and Chromium-
 Renamed to ```opensearch.xml```
 
 ---
-[Original Files](../archive/tmall.com/)
+[Original Files](../_archive/tmall.com/)

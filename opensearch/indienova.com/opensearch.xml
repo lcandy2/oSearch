@@ -1,0 +1,11 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>indienova</ShortName>
+  <Description>在 indienova 上搜索</Description>
+    <Image height="48" width="48" type="image/x-icon">
+      https://indienova.com/favicon.ico
+    </Image>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Url type="text/html" method="get" template="https://indienova.com/search/all/{searchTerms}" />
+  <moz:SearchForm>https://indienova.com</moz:SearchForm>
+</OpenSearchDescription>

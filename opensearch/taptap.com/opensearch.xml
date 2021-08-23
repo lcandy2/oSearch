@@ -1,0 +1,11 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>indienova</ShortName>
+  <Description>在 TapTap 上搜索游戏</Description>
+    <Image height="48" width="48" type="image/x-icon">
+      https://www.taptap.com/favicon.ico
+    </Image>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Url type="text/html" method="get" template="https://www.taptap.com/search/{searchTerms}" />
+  <moz:SearchForm>https://www.taptap.com/search</moz:SearchForm>
+</OpenSearchDescription>

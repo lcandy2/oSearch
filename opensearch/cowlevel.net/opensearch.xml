@@ -1,0 +1,13 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>奶牛关</ShortName>
+  <Description>在 奶牛关 上搜索</Description>
+    <Image height="32" width="32" type="image/x-icon">
+      https://cowlevel.net/favicon.ico
+    </Image>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Url type="text/html" method="get" template="https://cowlevel.net/search">
+    <Param name="q" value="{searchTerms}"/>	
+  </Url>
+  <moz:SearchForm>https://cowlevel.net/search</moz:SearchForm>
+</OpenSearchDescription>

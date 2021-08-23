@@ -1,0 +1,14 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>晋江文学城</ShortName>
+  <Description>在 晋江文学城 上按 文章标题 搜索</Description>
+    <Image height="16" width="16" type="image/x-icon">
+      https://www.jjwxc.net/favicon.ico
+    </Image>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Url type="text/html" method="get" template="https://www.jjwxc.net/search.php">
+    <Param name="q" value="{searchTerms}"/>	
+    <Param name="t" value="1"/>	
+  </Url>
+  <moz:SearchForm>https://www.jjwxc.net/</moz:SearchForm>
+</OpenSearchDescription>

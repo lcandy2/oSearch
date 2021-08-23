@@ -1,0 +1,13 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>斗鱼</ShortName>
+  <Description>在 斗鱼 上搜索</Description>
+    <Image height="48" width="48" type="image/x-icon">
+      https://www.douyu.com/favicon.ico
+    </Image>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Url type="text/html" method="get" template="https://www.douyu.com/search">
+    <Param name="kw" value="{searchTerms}"/>	
+  </Url>
+  <moz:SearchForm>https://www.douyu.com/search</moz:SearchForm>
+</OpenSearchDescription>

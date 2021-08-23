@@ -1,0 +1,13 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>QooApp</ShortName>
+  <Description>搜尋 QooApp 上的遊戲</Description>
+    <Image height="16" width="16" type="image/x-icon">
+      https://apps.qoo-app.com/favicon.ico
+    </Image>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Url type="text/html" method="get" template="https://apps.qoo-app.com/search">
+    <Param name="q" value="{searchTerms}"/>	
+  </Url>
+  <moz:SearchForm>https://apps.qoo-app.com/search</moz:SearchForm>
+</OpenSearchDescription>
