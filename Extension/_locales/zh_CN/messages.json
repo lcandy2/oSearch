@@ -1,9 +1,9 @@
 {
     "lnext_name": {
-        "message": "oSearch 快捷搜索"
+        "message": "oSearch：基于 OpenSearch 的快捷搜索"
     },
     "lnext_description": {
-        "message": "为常用的网站补充搜索引擎，以在地址栏中使用空格键或 Tab 键方便快捷地在网站内搜索"
+        "message": "为常用的网站添加 OpenSearch 搜索引擎，以在地址栏中使用空格键或 Tab 键方便快捷地在网站内搜索。"
     },
     "page_welcome_welcome": {
         "message": "欢迎使用 oSearch"

@@ -1,9 +1,9 @@
 {
-    "version": "0.1",
-    "date": "null",
+    "version": "0.1.8",
+    "date": "2021-08-22T17:45:37.839Z",
     "xmlUrl": "https://osearch.vercel.app/opensearch/",
     "xmlName": "/opensearch.xml",
-    "updateUrl": "https://raw.githubusercontent.com/lcandy2/oSearch/development/opensearch.json",
+    "updateUrl": "https://raw.githubusercontent.com/lcandy2/oSearch/main/opensearch.json",
     "updateLog": "",
     "updateHistory": {},
     "opensearch": {
@@ -30,7 +30,7 @@
             }
         },
         "bilibili.com": {
-            "enabled": false,
+            "enabled": true,
             "type": 1,
             "title": "哔哩哔哩",
             "_comments ": ""

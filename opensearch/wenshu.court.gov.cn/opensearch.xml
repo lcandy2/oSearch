@@ -6,7 +6,7 @@
       https://wenshu.court.gov.cn/website/wenshu/images/favicon.ico
     </Image>
   <InputEncoding>UTF-8</InputEncoding>
-  <Url type="text/html" method="get" template="https://wenshu.court.gov.cn/website/wenshu/181217BMTKHNT2W0/index.html"/>
+  <Url type="text/html" method="get" template="https://wenshu.court.gov.cn/website/wenshu/181217BMTKHNT2W0/index.html">
     <Param name="s21" value="{searchTerms}"/>	
   </Url>
   <moz:SearchForm>https://wenshu.court.gov.cn</moz:SearchForm>

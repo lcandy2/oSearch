@@ -6,7 +6,7 @@
       https://www.mgtv.com/favicon.ico
     </Image>
   <InputEncoding>UTF-8</InputEncoding>
-  <Url type="text/html" method="get" template="https://so.mgtv.com/so"/>
+  <Url type="text/html" method="get" template="https://so.mgtv.com/so">
     <Param name="k" value="{searchTerms}"/>	
   </Url>
   <moz:SearchForm>https://so.mgtv.com/so</moz:SearchForm>

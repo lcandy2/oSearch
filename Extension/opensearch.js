@@ -8,7 +8,7 @@ let getHost = () => {
     return host;
 };
 
-let setLnSearch = (data) => {
+let setlnSearch = (data) => {
     let lnsearch = document.createElement("link");
     lnsearch.setAttribute("rel", "search");
     lnsearch.setAttribute("type", "application/opensearchdescription+xml");
@@ -62,18 +62,20 @@ chrome.storage.local.get(['json'], (result) => {
         if (DEBUG) console.log("opensearch.json exist");
 
         // init lnsearch
-        let lnsearch = setLnSearch(result.json.opensearch[host]);
-        if (result.json.opensearch[host].type == (1 || 2)) {
+        let lnsearch = setlnSearch(result.json.opensearch[host]);
+        if (DEBUG) console.log("type is " + result.json.opensearch[host].type);
+        if (result.json.opensearch[host].type = (1 || 2)) {
             lnsearch.setAttribute("href", result.json.xmlUrl + host + result.json.xmlName);
         } else {
             lnsearch.setAttribute("href", result.json.opensearch[host].href);
         }
-        if (result.json.opensearch[host].type == (2 || 5)) {
+        if (result.json.opensearch[host].type = (2 || 5)) {
             removeOpenSearch(lnsearch);
             if (DEBUG) console.log("turn to remove OpenSearch");
         }
-
-        document.addEventListener("DOMContentLoaded", onDOMContentLoaded(lnsearch));
+        if (result.json.opensearch[host].enabled) {
+            document.addEventListener("DOMContentLoaded", onDOMContentLoaded(lnsearch));
+        }
     } else {
         if (DEBUG) console.log("opensearch.json don't exist");
     }
