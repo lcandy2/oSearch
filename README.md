@@ -12,11 +12,9 @@ oSearch 可于 Chrome 网上应用店，Edge 外接程序 与 Firefox 附加组�
 
 **当前 oSearch 正在等待审核，审核通过后即可下载。**
 
-<!--
 [![Avaliable in the Chrome Web Store](https://storage.googleapis.com/chrome-gcs-uploader.appspot.com/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/UV4C4ybeBTsZt43U4xis.png)](https://chrome.google.com/webstore/detail/pejlgjjlbhpbfiiaegahmeahlhbpkglo)
 [<img src='https://ffp4g1ylyit3jdyti1hqcvtb-wpengine.netdna-ssl.com/addons/files/2015/11/get-the-addon.png' alt='Get the add-on' style='height: 58px;'/>](https://addons.mozilla.org/firefox/addon/osearch)
-[<img src='https://user-images.githubusercontent.com/11660256/111323589-4f4c7c00-866a-11eb-80ff-da7de777d7c0.png' alt='Get it for Microsoft Edge' style='height: 58px;'/>](https://microsoftedge.microsoft.com/addons/detail)
--->
+[<img src='https://user-images.githubusercontent.com/11660256/111323589-4f4c7c00-866a-11eb-80ff-da7de777d7c0.png' alt='Get it for Microsoft Edge' style='height: 58px;'/>](https://microsoftedge.microsoft.com/addons/detail/fdekeghfifiibfopfnamhegkhhdpdmlo)
 
 <br>连接至扩展商店出现问题？你可以手动安装扩展，只需两步
 
