@@ -27,6 +27,9 @@ oSearch 可于 Chrome 网上应用店，Edge 外接程序 与 Firefox 附加组�
 + 搜索引擎添加完成后，在地址栏中输入网站地址，按下 空格键 或 Tab 即可快速搜索
 + 在 Firefox 浏览器中，需要手动点击带有加号的网站图标将其添加至搜索引擎中。
 
+## 截图
+![oSearch helps you search wikipedia.org via OpenSearch](https://lh3.googleusercontent.com/Q7kv7LdlO1TlN0XO3JcEThh2K1RrUNXwcadRhKH8DjrLRbSqM_KN61n-j7OG0OoOMIyD6syZu_Devh-KIfA2jcf4rQk=s0)
+![oSearch helps in adding search engines](https://lh3.googleusercontent.com/juB0KsVN4cvuBOKFiax8WgDNxNst09BFflkH3lU-TYTCTeojRvpwQUNa1wqYgkqvXGKgqFw93sfRYi6HhLwgTsCLog=s0)
 
 ## 站点支持
 oSearch 支持大多数的热门网站。
