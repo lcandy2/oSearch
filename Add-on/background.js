@@ -2,7 +2,7 @@
 chrome.runtime.onInstalled.addListener(() => {
     chrome.storage.local.get(['updateUrl'], (updUrl) => {
         if (updUrl.updateUrl = 'underfined') {
-            chrome.storage.local.set({ updateUrl: "https://raw.githubusercontent.com/lcandy2/oSearch/main/opensearch.json" }, );
+            chrome.storage.local.set({ updateUrl: "https://osearch.vercel.app/opensearch.json" }, );
             update();
         } else { update(); }
     });
