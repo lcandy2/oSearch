@@ -1,8 +1,10 @@
 {
-    "version": "0.1.8.3",
-    "date": "2021-08-23T07:56:42.927Z",
+    "version": "0.1.8.5",
+    "date": "2021-09-03T07:36:25.887Z",
     "xmlUrl": "//osearch.vercel.app/opensearch/",
     "xmlName": "/opensearch.xml",
+    "xmlType": "application/opensearchdescription+xml",
+    "xmlEncode": "base64",
     "updateUrl": "https://osearch.vercel.app/opensearch.json",
     "updateLog": "",
     "updateHistory": {},
@@ -33,6 +35,19 @@
             "enabled": true,
             "type": 1,
             "title": "哔哩哔哩",
+            "description": {
+                "ShortName": "",
+                "Description": "",
+                "Image": { "width": "", "height": "", "href": "" },
+                "Url": {
+                    "template": "",
+                    "Param": { "name1": "", "name2": "" },
+                    "suggestions": { "template": "" }
+                },
+                "InputEncoding": {},
+                "OutputEncoding": {},
+                "moz:SearchForm": ""
+            },
             "_comments ": ""
         },
         "fanyi.baidu.com": {
