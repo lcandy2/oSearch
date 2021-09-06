@@ -89,7 +89,7 @@
         },
         "weibo.com": {
             "enabled": false,
-            "type": 2,
+            "type": 3,
             "title": "微博",
             "href": "//weibo.com/aj/static/opensearch.xml",
             "_comments": ""
