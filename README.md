@@ -58,7 +58,7 @@ oSearch 支持大多数的热门网站。
 + [@nexmoe](https://github.com/nexmoe) 数据处理与判断
 
 ## 合作
-[<img src='https://shu.nexmoe.com/assets/Snipaste_2021-10-29_00-26-15.0f6b4746.png' alt='小舒同学' style='height:auto;'/>](https://shu.nexmoe.com)
+[<img src='https://xiaoshu.app/assets/Snipaste_2021-11-30_16-43-11.2656ce44.png' alt='小舒同学' style='height:auto;'/>](https://shu.nexmoe.com)
 
 
 oSearch 现已与 [@nexmoe](https://github.com/nexmoe) 开发的 [小舒同学](https://shu.nexmoe.com) 合作
